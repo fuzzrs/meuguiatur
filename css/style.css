@@ -26,9 +26,6 @@
   position: relative;
   z-index: 901; }
 
-.main-nav {
-  height: 30px; }
-
 .nav-list {
   transform: translateX(360px);
   transition: transform 0.3s ease-in;
