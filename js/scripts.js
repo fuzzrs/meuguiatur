@@ -85,3 +85,36 @@ $("document").ready(function($){
         }
     });
 });
+
+// jQuery('.toggle-nav').click(function(e) {
+//       jQuery(this).toggleClass('-active');
+//       jQuery('.nav-list').toggleClass('-active');
+//       e.preventDefault();
+//     });
+
+
+$(function() {
+  mobileMenuToggle();
+  closeMobileMenu();
+});
+
+function mobileMenuToggle() {
+  $('.toggle-nav').click(function(e) {
+    $(this).toggleClass('-active');
+    $('.nav-list').toggleClass('-active');
+    $('body').toggleClass('mobile-nav-opened');
+    e.stopPropagation();
+    e.preventDefault();
+    return false;
+  });
+}
+
+function closeMobileMenu() {
+  $('html').click(function(e) {
+    $('.toggle-nav').removeClass('-active');
+    $('.nav-list').removeClass('-active');
+    $('body').removeClass('mobile-nav-opened');
+    e.stopPropagation();
+    e.preventDefault();
+  });
+}

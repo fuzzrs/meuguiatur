@@ -31,6 +31,7 @@
 					</div>
 					<nav class="main-nav">
 						<a href="#" class="toggle-nav">Menu</a>
+						<div class="mobile-overlay">
 						<ul class="nav-list">
 							<li class="item"><a class="link" href="#">Sobre</a></li>
 							<li class="item"><a class="link" href="#">Cidades</a></li>
@@ -39,6 +40,7 @@
 							<li class="item"><a class="link" href="#">Passeios</a></li>
 							<li class="item"><a class="link" href="#">Contato</a></li>
 						</ul>
+						</div>
 					</nav>
 				</div>
 			</div>
@@ -392,11 +394,12 @@
 
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script>
-		jQuery('.toggle-nav').click(function(e) {
-			jQuery(this).toggleClass('-active');
-			jQuery('.nav-list').toggleClass('-active');
-			e.preventDefault();
-		});
+		// jQuery('.toggle-nav').click(function(e) {
+		// 	jQuery(this).toggleClass('-active');
+		// 	jQuery('.nav-list').toggleClass('-active');
+		// 	e.preventDefault();
+		// });
+		
 	</script>	
 </body>
 </html>
