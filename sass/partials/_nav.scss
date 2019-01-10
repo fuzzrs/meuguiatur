@@ -1,6 +1,6 @@
 .nav-bar {
 	background: #fff;
-	transition: transform .3s ease;
+	
 	position: absolute;
 	width: 100%;
 
@@ -22,6 +22,7 @@
 
 	margin-top: -40px;
 	transform: translateY(40px);
+	transition: transform .3s ease;
 
 	.logo img {
 		height: 48px;

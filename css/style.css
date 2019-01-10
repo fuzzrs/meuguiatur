@@ -1,6 +1,5 @@
 .nav-bar {
   background: #fff;
-  transition: transform .3s ease;
   position: absolute;
   width: 100%; }
   .nav-bar .flex-align {
@@ -15,7 +14,8 @@
   width: 100%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   margin-top: -40px;
-  transform: translateY(40px); }
+  transform: translateY(40px);
+  transition: transform .3s ease; }
   .f-nav .logo img {
     height: 48px; }
 
