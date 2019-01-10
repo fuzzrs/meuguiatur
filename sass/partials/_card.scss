@@ -1,0 +1,69 @@
+.card-component {
+	box-shadow: 0 1px 5px rgba(156, 160, 171, 0.45);
+	border-radius: 4px;
+	// width: 356px;
+	max-width: 100%;
+	background: #fff;
+	// min-height: 380px;
+
+	.flex-wrap {
+		align-items: center;
+	}
+
+	.btn {
+		font-size: 12px;
+		font-weight: 600;
+		padding: 8px 12px;
+	}
+
+	.title {
+		margin-bottom: 20px;
+	}
+
+	> .card-image .image {
+		// width: 356px;
+		// max-width: 100%;
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	.card-content {
+		padding: vr(2) 20px;
+	}
+}
+
+// serve para não cortar a sombra fora
+.owl-stage{
+    margin: 30px;
+}
+
+.slick-list {
+  box-sizing: initial;
+  padding: 25px 10px !important;
+}
+
+ /* the slides */
+  .slick-slide {
+    margin: 0 13px;
+  }
+
+  /* the parent */
+  .slick-list {
+    margin: 0 -13px;
+  }
+
+.slick-prev:before, .slick-next:before {
+	color: $primary-color !important;
+	opacity: 1 !important; 
+}
+
+.slick-prev {
+	left: -12px !important;
+	z-index: 100;
+}
+
+.slick-next {
+	right: -12px !important;
+	z-index: 100;
+}

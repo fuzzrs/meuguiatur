@@ -1,0 +1,144 @@
+@import '../typi/scss/typi';
+//components
+@import 'variables';
+@import 'partials/nav';
+@import 'partials/card';
+
+.ta-c {
+	text-align: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 1180px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.flex-align {
+	display: flex;
+	justify-content: space-between;
+}
+
+html {
+	@include typi-init;
+	font-family: 'Montserrat', sans-serif;
+	color: $text-color;
+}
+
+h1 {@include typi('h1');}
+h2 {@include typi('h2');}
+h3 {@include typi('h3');}
+
+.small-font {
+	font-size: $small-font;
+}
+
+.bold-text {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background: $primary-color;
+	border-radius: 4px;
+	transition: all 0.3s;
+
+	&:hover {
+		background: $secondary-color;
+	}
+}
+
+.ghost-btn {
+	display: inline-block;
+	text-decoration: none;
+	color: $secondary-color;
+	background: transparent;
+	border-radius: 4px;
+	border: 1px solid $secondary-color;
+	padding: 15px 34px;
+	transition: all 0.3s;
+
+	&:hover {
+		background: $secondary-color;
+		color: #fff;
+	}
+}
+
+
+//sticky footer
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex: 1;
+}
+//end sticky footer
+
+
+.site-header {
+	margin-bottom: vr(1);
+	color: #fff;
+}
+
+.hero-banner {
+	height: 448px;
+	margin-top: 98px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-text {
+	text-align: center;
+	> .subtitle {
+		margin-bottom: vr(0.4);
+	}
+}
+
+.search-bar {
+	transform: translateY(-40px);
+}
+.search {
+	width: 100%;
+	max-width: 926px;
+	height: 72px;
+	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	color: $text-color;
+	margin: 0 auto;
+	display: block;
+}
+
+.section {
+	margin-bottom: vr(2);
+}
+.section-title {
+	margin-bottom: vr(1); // 2 baselines
+}
+
+
+
+
+
+
+.site-footer {
+	background: $text-color;
+	color: $primary-color;
+	padding: 48px 0 24px;
+}
+
