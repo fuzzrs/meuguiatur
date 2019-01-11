@@ -111,7 +111,7 @@ function mobileMenuToggle() {
 }
 
 function closeMobileMenu() {
-  $('html').click(function(e) {
+  $('.site-content').click(function(e) {
     $('.toggle-nav').removeClass('-active');
     $('.nav-list').removeClass('-active');
     $('body').removeClass('mobile-nav-opened');

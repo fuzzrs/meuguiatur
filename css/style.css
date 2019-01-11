@@ -36,14 +36,18 @@
   top: 0;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   background: #fff;
-  width: 300px;
+  width: 256px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 56px 20px; }
   .nav-list .link {
     text-decoration: none;
-    color: #B83070; }
+    color: #B83070;
+    display: block;
+    padding-top: 14px;
+    background: #000;
+    height: 48px; }
 
 .nav-list.-active {
   transform: translateX(0); }
@@ -189,12 +193,11 @@ h3 {
   flex: 1; }
 
 .site-header {
-  margin-bottom: 1.4rem;
-  color: #fff; }
+  height: 98px; }
 
 .hero-banner {
   height: 448px;
-  margin-top: 98px;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center; }

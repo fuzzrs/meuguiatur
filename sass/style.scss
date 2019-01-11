@@ -89,13 +89,14 @@ h3 {@include typi('h3');}
 
 
 .site-header {
-	margin-bottom: vr(1);
-	color: #fff;
+	// margin-bottom: vr(1);
+	height: 98px;
 }
 
 .hero-banner {
 	height: 448px;
-	margin-top: 98px;
+	// margin-top: 98px;
+	color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
