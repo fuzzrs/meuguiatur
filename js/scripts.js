@@ -27,6 +27,7 @@ $('.card-carousel').slick({
   dots: false,
   arrows: true,
   infinite: false,
+  autoHeight: false,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -111,7 +112,7 @@ function mobileMenuToggle() {
 }
 
 function closeMobileMenu() {
-  $('.site-content').click(function(e) {
+  $('.site-content, .site-footer').click(function(e) {
     $('.toggle-nav').removeClass('-active');
     $('.nav-list').removeClass('-active');
     $('body').removeClass('mobile-nav-opened');

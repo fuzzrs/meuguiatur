@@ -3,8 +3,12 @@
 	border-radius: 4px;
 	// width: 356px;
 	max-width: 100%;
-	background: #fff;
-	// min-height: 380px;
+	height: 100%;
+	
+	// espalha o conteúdo entre a altura disponível
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-between;
 
 	.flex-wrap {
 		align-items: center;
@@ -55,7 +59,7 @@
 
 .slick-prev:before, .slick-next:before {
 	color: $primary-color !important;
-	opacity: 1 !important; 
+	// opacity: 1 !important; 
 }
 
 .slick-prev {
@@ -66,4 +70,16 @@
 .slick-next {
 	right: -12px !important;
 	z-index: 100;
+}
+
+
+//mesma altura itens do slide
+.slick-track
+{
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
 }
