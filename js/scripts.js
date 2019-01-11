@@ -96,6 +96,7 @@ $("document").ready(function($){
 $(function() {
   mobileMenuToggle();
   closeMobileMenu();
+  // bCloseMobileMenu();
 });
 
 function mobileMenuToggle() {
@@ -114,7 +115,14 @@ function closeMobileMenu() {
     $('.toggle-nav').removeClass('-active');
     $('.nav-list').removeClass('-active');
     $('body').removeClass('mobile-nav-opened');
-    e.stopPropagation();
-    e.preventDefault();
+    // e.stopPropagation();
+    // e.preventDefault();
   });
 }
+
+// function bCloseMobileMenu() {
+//   $('html').click(function(e) {
+//     $('body').removeClass('mobile-nav-opened');
+//     e.stopPropagation();
+//   });
+// }
