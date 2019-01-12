@@ -36,6 +36,10 @@
 .toggle-nav {
 	position: relative;
 	z-index: 901;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 

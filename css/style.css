@@ -24,7 +24,10 @@
 
 .toggle-nav {
   position: relative;
-  z-index: 901; }
+  z-index: 901;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .nav-list {
   transform: translateX(360px);
@@ -79,7 +82,7 @@
 
 .slick-list {
   box-sizing: initial;
-  padding: 4px 10px 24px !important; }
+  padding: 4px 10px 2.8rem !important; }
 
 /* the slides */
 .slick-slide {
