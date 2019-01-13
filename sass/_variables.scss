@@ -1,5 +1,21 @@
 // variaveis
 
+@mixin phone-only {
+  @media (max-width: 930px) { @content; }
+}
+@mixin tablet-portrait-up {
+  @media (min-width: 930px) { @content; }
+}
+@mixin tablet-landscape-up {
+  @media (min-width: 899px) { @content; }
+}
+@mixin desktop-up {
+  @media (min-width: 1199px) { @content; }
+}
+@mixin big-desktop-up {
+  @media (min-width: 1799px) { @content; }
+}
+
 // cores
 $primary-color: #97D100;
 $secondary-color: #B83070;

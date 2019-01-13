@@ -42,6 +42,7 @@ h3 {@include typi('h3');}
 
 .bold-text {
 	font-size: 18px;
+	font-size: 22px;
 	font-weight: 700;
 }
 
@@ -131,8 +132,9 @@ h3 {@include typi('h3');}
 	margin-bottom: vr(3);
 }
 .section-title {
+	text-align: center;
 	margin-bottom: vr(1); // 2 baselines
-	margin-left: 20px;
+	// margin-left: 20px;
 }
 
 

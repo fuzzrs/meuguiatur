@@ -13,6 +13,10 @@
 	}
 }
 
+.nav-list {
+	list-style: none;
+}
+
 .f-nav {
 	position: fixed;
 	z-index: 899;
@@ -29,10 +33,6 @@
 	}
 }
 
-.nav-list {
-	list-style: none;
-}
-
 .toggle-nav {
 	position: relative;
 	z-index: 901;
@@ -44,9 +44,8 @@
 	align-items: center;
 }
 
-
 // estilos menu mobile
-
+@include phone-only {
 .nav-list {
 	transform: translateX(360px);
 	transition: transform 0.3s ease-in;
@@ -73,11 +72,40 @@
 		display: block;
 		padding-top: 14px;
 		height: 48px;
-
 	}
 }
-// estilos do menu mobile aberto
 .nav-list.-active {
 	transform: translateX(0);
 	
+}
+}
+
+// estilos do menu desktop
+@include tablet-portrait-up {
+.toggle-nav {
+	display: none;
+}
+.nav-list {
+	display: flex;
+
+	.item {
+			margin-left: 32px;
+	}
+
+	.item:first-child {
+			margin-left: 0;
+		}
+
+	.link {
+		text-decoration: none;
+		color: $secondary-color;
+		transition: all .15s ease;
+		
+		&:active,		
+		&:hover {
+			border-bottom: 1px solid $secondary-color;
+			padding-bottom: 2px;
+		}
+	}
+}
 }
