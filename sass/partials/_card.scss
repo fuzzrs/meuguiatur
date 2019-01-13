@@ -57,18 +57,24 @@
     margin: 0 -13px;
   }
 
+
+.slick-prev, .slick-next {
+	height: 32px !important;
+	width: 32px !important;
+}
 .slick-prev:before, .slick-next:before {
 	color: $primary-color !important;
+	font-size: 32px !important;
 	// opacity: 1 !important; 
 }
 
 .slick-prev {
-	left: -12px !important;
+	left: -20px !important;
 	z-index: 100;
 }
 
 .slick-next {
-	right: -12px !important;
+	right: -20px !important;
 	z-index: 100;
 }
 
