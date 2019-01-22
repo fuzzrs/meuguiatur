@@ -105,8 +105,10 @@ h3 {@include typi('h3');}
 
 .hero-text {
 	text-align: center;
+	// font-style: italic;
 	> .subtitle {
 		margin-bottom: vr(0.4);
+		font-size: 36px;
 	}
 }
 
@@ -137,7 +139,11 @@ h3 {@include typi('h3');}
 	// margin-left: 20px;
 }
 
-
+.banner-carousel {
+	img {
+		max-width: 100%;
+	}
+}
 
 
 

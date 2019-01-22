@@ -101,16 +101,16 @@
 .owl-stage {
   margin: 30px; }
 
-.slick-list {
+.card-carousel .slick-list {
   box-sizing: initial;
   padding: 4px 10px 2.8rem !important; }
 
 /* the slides */
-.slick-slide {
+.card-carousel .slick-slide {
   margin: 0 13px; }
 
 /* the parent */
-.slick-list {
+.card-carousel .slick-list {
   margin: 0 -13px; }
 
 .slick-prev, .slick-next {
@@ -121,11 +121,11 @@
   color: #97D100 !important;
   font-size: 32px !important; }
 
-.slick-prev {
+.card-carousel .slick-prev {
   left: -20px !important;
   z-index: 100; }
 
-.slick-next {
+.card-carousel .slick-next {
   right: -20px !important;
   z-index: 100; }
 
@@ -242,7 +242,8 @@ h3 {
 .hero-text {
   text-align: center; }
   .hero-text > .subtitle {
-    margin-bottom: 0.56rem; }
+    margin-bottom: 0.56rem;
+    font-size: 36px; }
 
 .search-bar {
   transform: translateY(-40px);
@@ -267,6 +268,9 @@ h3 {
 .section-title {
   text-align: center;
   margin-bottom: 1.4rem; }
+
+.banner-carousel img {
+  max-width: 100%; }
 
 .site-footer {
   background: #3D4E61;

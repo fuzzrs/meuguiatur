@@ -46,18 +46,18 @@
     margin: 30px;
 }
 
-.slick-list {
+.card-carousel .slick-list {
   box-sizing: initial;
   padding: 4px 10px vr(2) !important;
 }
 
  /* the slides */
-  .slick-slide {
+  .card-carousel .slick-slide {
     margin: 0 13px;
   }
 
   /* the parent */
-  .slick-list {
+  .card-carousel .slick-list {
     margin: 0 -13px;
   }
 
@@ -72,12 +72,12 @@
 	// opacity: 1 !important; 
 }
 
-.slick-prev {
+.card-carousel .slick-prev {
 	left: -20px !important;
 	z-index: 100;
 }
 
-.slick-next {
+.card-carousel .slick-next {
 	right: -20px !important;
 	z-index: 100;
 }
