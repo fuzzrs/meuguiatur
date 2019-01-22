@@ -110,9 +110,6 @@
   margin: 0 13px; }
 
 /* the parent */
-.card-carousel .slick-list {
-  margin: 0 -13px; }
-
 .slick-prev, .slick-next {
   height: 32px !important;
   width: 32px !important; }
