@@ -35,9 +35,17 @@ html {
 h1 {@include typi('h1');}
 h2 {@include typi('h2');}
 h3 {@include typi('h3');}
+h4 {@include typi('h4');}
+
+h1, h2, h3, h4 {
+	margin-bottom: vr(1);
+}
 
 .small-font {
 	font-size: $small-font;
+}
+.mt-2 {
+	margin-top: vr(2);
 }
 
 .bold-text {
@@ -73,6 +81,11 @@ h3 {@include typi('h3');}
 		background: $secondary-color;
 		color: #fff;
 	}
+}
+
+p {
+	margin-bottom: vr(1);
+	line-height: 1.6;
 }
 
 
@@ -115,10 +128,14 @@ h3 {@include typi('h3');}
 .search-bar {
 	transform: translateY(-40px);
 	margin-bottom: vr(2);
-}
-.search {
-	width: 100%;
+
 	max-width: 926px;
+	margin: 0 auto;
+	position: relative;
+}
+.search-input {
+	width: 100%;
+	// max-width: 926px;
 	height: 72px;
 	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 	border-radius: 4px;
@@ -126,17 +143,33 @@ h3 {@include typi('h3');}
 	text-align: center;
 	font-size: 16px;
 	color: $text-color;
-	margin: 0 auto;
+	// margin: 0 auto;
 	display: block;
 }
 
+.search-btn {
+	position: absolute;
+	right: 56px;
+	top: 27px;
+}
+
+
 .section {
 	margin-bottom: vr(3);
+
+	&.-grey {
+		background: #e8eaee;
+	}
 }
+
 .section-title {
 	text-align: center;
 	margin-bottom: vr(1); // 2 baselines
 	// margin-left: 20px;
+}
+
+.section-galeria {
+	padding-top: vr(2);
 }
 
 .banner-carousel {
@@ -145,12 +178,35 @@ h3 {@include typi('h3');}
 	}
 }
 
+.center-title {
+	text-align: center;
+}
+
+.photo-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 0 0;
+
+	img {
+		max-width: 100%;
+	}
+}
 
 
 
 .site-footer {
 	background: $text-color;
 	color: $primary-color;
+	color: #fff;
 	padding: 48px 0 24px;
+
+	h4 {
+		text-transform: uppercase;
+	}
 }
 
+.footer-columns {
+	> div {
+		line-height: 1.4;
+	}
+}
