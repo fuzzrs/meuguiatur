@@ -22,8 +22,8 @@
 }
 .flex-align {
 	@include tablet-landscape-up {
-	display: flex;
-	justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
@@ -193,8 +193,17 @@ p {
 	img {
 		max-width: 100%;
 		object-fit: cover;
-		background: #f9f7f7;
 		height: 436px;
+		background: #f9f7f7;
+		background: $text-color;
+		position: relative;
+		&:before {
+			content: url('../image/svg/oval.svg');
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 
@@ -215,7 +224,7 @@ p {
 			width: 50%;
 		}
 		@include desktop-up {
-		width: 25%;
+			width: 25%;
 		}
 	}
 
@@ -225,6 +234,15 @@ p {
 		min-height: 155px;
 		height: 100%;
 		object-fit: cover;
+		background: $text-color;
+		position: relative;
+		&:before {
+			content: url('../image/svg/oval.svg');
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 }
 
@@ -232,7 +250,7 @@ p {
 	.infos,
 	.form {
 		@include tablet-landscape-up {
-		width: 40%;
+			width: 40%;
 		}
 	}
 
@@ -286,10 +304,10 @@ p {
 	}
 
 	@include phone-only {
-	.flex-align {
-		display: block;
+		.flex-align {
+			display: block;
+		}
 	}
-}
 }
 
 .footer-columns {
