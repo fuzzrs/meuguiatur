@@ -329,7 +329,8 @@ p {
   margin-bottom: 1.4rem; }
 
 .banner-carousel img {
-  max-width: 100%; }
+  max-width: 100%;
+  background: lightgrey; }
 
 .center-text {
   text-align: center; }
