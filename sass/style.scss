@@ -210,3 +210,25 @@ p {
 		line-height: 1.4;
 	}
 }
+
+.banner-carousel {
+	.slick-prev {
+		left: 32px !important;
+		z-index: 10;
+	}
+
+	.slick-prev:before {
+		content: url(../image/svg/arrow-prev.svg) !important;
+		height: 48px !important;
+		width: 48px !important;
+	}
+	.slick-next {
+		right: 32px !important;
+		z-index: 10;
+	}
+	.slick-next:before {
+		content: url(../image/svg/arrow-next.svg) !important;
+		height: 48px !important;
+		width: 48px !important;
+	}
+}

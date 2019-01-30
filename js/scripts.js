@@ -66,7 +66,7 @@ $('.card-carousel').slick({
 $(document).ready(function(){
 $('.banner-carousel').slick({
   dots: false,
-  arrows: false,
+  arrows: true,
   infinite: false,
   autoHeight: false,
   speed: 300,
