@@ -21,8 +21,10 @@
 	margin: 0 auto;
 }
 .flex-align {
+	@include tablet-landscape-up {
 	display: flex;
 	justify-content: space-between;
+	}
 }
 
 html {
@@ -226,6 +228,51 @@ p {
 	}
 }
 
+.contact-section {
+	.infos,
+	.form {
+		@include tablet-landscape-up {
+		width: 40%;
+		}
+	}
+
+	input[type=text],
+	input[type=email],
+	textarea {
+		border: 0;
+		border-bottom: 1px solid $text-color;
+		@include phone-only {
+			margin-bottom: vr(2);
+		}
+	}
+	
+	input[type=text],
+	input[type=email] {
+		width: calc(100% - 10px);
+		padding-bottom: 8px;
+	}
+
+	input[type=text] {
+		margin-right: 20px;
+	}
+
+	textarea {
+		margin-top: vr(1);
+		width: 100%;
+	}
+
+	input[type=text]::placeholder,
+	input[type=email]::placeholder,
+	textarea::placeholder {
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
+		display: inline-block;
+		font-weight: regular;
+	}
+}
+
+
 
 
 .site-footer {
@@ -243,11 +290,6 @@ p {
 		display: block;
 	}
 }
-
-
-
-
-
 }
 
 .footer-columns {

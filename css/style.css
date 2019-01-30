@@ -1,8 +1,12 @@
+.nav-align {
+  display: flex;
+  justify-content: space-between; }
+
 .nav-bar {
   background: #fff;
   position: absolute;
   width: 100%; }
-  .nav-bar .flex-align {
+  .nav-bar .nav-align {
     align-items: center; }
   .nav-bar .logo {
     padding: 0.7rem 0; }
@@ -161,9 +165,10 @@
   padding: 0 20px;
   margin: 0 auto; }
 
-.flex-align {
-  display: flex;
-  justify-content: space-between; }
+@media (min-width: 899px) {
+  .flex-align {
+    display: flex;
+    justify-content: space-between; } }
 
 html {
   font-family: 'Montserrat', sans-serif;
@@ -354,6 +359,38 @@ p {
     min-height: 155px;
     height: 100%;
     object-fit: cover; }
+
+@media (min-width: 899px) {
+  .contact-section .infos,
+  .contact-section .form {
+    width: 40%; } }
+.contact-section input[type=text],
+.contact-section input[type=email],
+.contact-section textarea {
+  border: 0;
+  border-bottom: 1px solid #3D4E61; }
+  @media (max-width: 930px) {
+    .contact-section input[type=text],
+    .contact-section input[type=email],
+    .contact-section textarea {
+      margin-bottom: 2.8rem; } }
+.contact-section input[type=text],
+.contact-section input[type=email] {
+  width: calc(100% - 10px);
+  padding-bottom: 8px; }
+.contact-section input[type=text] {
+  margin-right: 20px; }
+.contact-section textarea {
+  margin-top: 1.4rem;
+  width: 100%; }
+.contact-section input[type=text]::placeholder,
+.contact-section input[type=email]::placeholder,
+.contact-section textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: regular; }
 
 .site-footer {
   background: #3D4E61;
