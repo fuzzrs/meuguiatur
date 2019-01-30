@@ -24,10 +24,15 @@
 	display: flex;
 	justify-content: space-between;
 }
+
 html {
 	@include typi-init;
 	font-family: 'Montserrat', sans-serif;
 	color: $text-color;
+}
+
+body {
+	@include typi('base');
 }
 
 h1 {@include typi('h1');}
@@ -46,9 +51,7 @@ h1, h2, h3, h4 {
 .small-font {
 	font-size: $small-font;
 }
-.mt-2 {
-	margin-top: vr(2);
-}
+
 
 .bold-text {
 	font-size: 18px;
@@ -178,17 +181,13 @@ p {
 	// margin-left: 20px;
 }
 
-.section-galeria {
-	padding-top: vr(2);
-}
-
 .banner-carousel {
 	img {
 		max-width: 100%;
 	}
 }
 
-.center-title {
+.center-text {
 	text-align: center;
 }
 
@@ -267,3 +266,21 @@ p {
 		width: 48px !important;
 	}
 }
+
+// margin overrides
+
+//margin top
+.mt-2 {margin-top: vr(2);}
+.mt-4 {margin-top: vr(4);}
+
+//margin-bottom
+.mb-1 {margin-bottom: vr(1);}
+.mb-2 {margin-bottom: vr(2);}
+.mb-3 {margin-bottom: vr(3);}
+
+//padding top
+.pt-4 {padding-top: vr(4);}
+
+//padding-bottom
+.pb-4 {padding-bottom: vr(4);}
+
