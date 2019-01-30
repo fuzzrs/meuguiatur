@@ -198,6 +198,9 @@ h4 {
 h1, h2, h3, h4 {
   margin-bottom: 1.4rem; }
 
+@media (max-width: 930px) {
+  h4 {
+    margin-top: 1.4rem; } }
 .small-font {
   font-size: 14px; }
 
@@ -258,7 +261,10 @@ p {
   text-align: center; }
   .hero-text > .subtitle {
     margin-bottom: 0.56rem;
-    font-size: 36px; }
+    font-size: 24px; }
+    @media (min-width: 930px) {
+      .hero-text > .subtitle {
+        font-size: 36px; } }
 
 .search-bar {
   transform: translateY(-40px);
@@ -282,6 +288,9 @@ p {
   position: absolute;
   right: 56px;
   top: 27px; }
+  @media (max-width: 930px) {
+    .search-btn {
+      display: none; } }
 
 .section {
   margin-bottom: 4.2rem; }
@@ -315,6 +324,9 @@ p {
   padding: 48px 0 24px; }
   .site-footer h4 {
     text-transform: uppercase; }
+  @media (max-width: 930px) {
+    .site-footer .flex-align {
+      display: block; } }
 
 .footer-columns > div {
   line-height: 1.4; }
