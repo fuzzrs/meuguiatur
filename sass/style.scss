@@ -164,10 +164,11 @@ p {
 
 
 .section {
-	margin-bottom: vr(3);
+	padding-bottom: vr(3);
 
 	&.-grey {
 		background: #e8eaee;
+		padding-bottom: 0;
 	}
 }
 
@@ -192,12 +193,27 @@ p {
 }
 
 .photo-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 0 0;
+	// display: grid;
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	// grid-gap: 0 0;
+	display: flex;
+	flex-wrap: wrap;
 
-	img {
-		max-width: 100%;
+	> a {
+		width: 100%;
+		@include tablet-landscape-up {
+			width: 50%;
+		}
+		@include desktop-up {
+		width: 25%;
+		}
+	}
+
+	.image {
+		// max-width: 100%;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
