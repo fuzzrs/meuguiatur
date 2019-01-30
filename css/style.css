@@ -379,20 +379,6 @@ p {
   height: 48px !important;
   width: 48px !important; }
 
-.ratio-sixteen-nine {
-  position: relative;
-  padding-bottom: 56.25%; }
-  .ratio-sixteen-nine img,
-  .ratio-sixteen-nine video,
-  .ratio-sixteen-nine iframe,
-  .ratio-sixteen-nine object,
-  .ratio-sixteen-nine embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-
 .mt-2 {
   margin-top: 2.8rem; }
 
