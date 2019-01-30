@@ -351,6 +351,7 @@ p {
         width: 25%; } }
   .photo-grid .image {
     width: 100%;
+    min-height: 155px;
     height: 100%;
     object-fit: cover; }
 
