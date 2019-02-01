@@ -154,6 +154,9 @@
 .ta-c {
   text-align: center; }
 
+.ta-r {
+  text-align: right; }
+
 * {
   margin: 0;
   padding: 0;
@@ -249,6 +252,9 @@ h1, h2, h3, h4 {
   .btn:hover {
     background: #B83070; }
 
+.form-btn {
+  padding: 15px 34px; }
+
 .ghost-btn {
   display: inline-block;
   text-decoration: none;
@@ -335,7 +341,7 @@ p {
   margin-bottom: 1.4rem; }
 
 .banner-carousel img {
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
   height: 436px;
   background: #f9f7f7;
@@ -436,6 +442,9 @@ p {
   content: url(../image/svg/arrow-next.svg) !important;
   height: 48px !important;
   width: 48px !important; }
+
+.mt-1 {
+  margin-top: 1.4rem; }
 
 .mt-2 {
   margin-top: 2.8rem; }

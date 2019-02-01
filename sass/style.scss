@@ -7,6 +7,9 @@
 .ta-c {
 	text-align: center;
 }
+.ta-r {
+	text-align: right;
+}
 
 * {
 	margin: 0;
@@ -75,6 +78,10 @@ h1, h2, h3, h4 {
 	&:hover {
 		background: $secondary-color;
 	}
+}
+
+.form-btn {
+	padding: 15px 34px;
 }
 
 .ghost-btn {
@@ -342,6 +349,7 @@ p {
 // margin overrides
 
 //margin top
+.mt-1 {margin-top: vr(1);}
 .mt-2 {margin-top: vr(2);}
 .mt-4 {margin-top: vr(4);}
 
