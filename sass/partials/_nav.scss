@@ -1,6 +1,7 @@
 .nav-align {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .nav-bar {
 	background: #fff;
@@ -8,9 +9,9 @@
 	position: absolute;
 	width: 100%;
 
-	.nav-align {
-	 align-items: center;
-	}
+	// .nav-align {
+	//  align-items: center;
+	// }
 
 	.logo {
 		padding: vr(0.5) 0;
